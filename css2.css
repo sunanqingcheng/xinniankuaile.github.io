@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+	padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+  
+}
+.a{
+	width: 100%;
+	height: 450px;
+	border: 0px solid red;
+	animation: 30s lbt  infinite;
+}
+@keyframes lbt{
+	0%{background-image: url(img/cj/cj\ \(1\).jpg);}
+	25%{background-image: url(img/cj/cj\ \(1\).png);}
+	50%{background-image: url(img/cj/cj\ \(2\).jpeg);}
+	75%{background-image: url(img/cj/cj\ \(3\).jpeg);}
+	100%{background-image: url(img/cj/cj\ \(3\).jpeg);}
+}
+
+.b {
+    background-color: #f2f2f2;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  
+  }
+  
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .container video{
+    height: 750px;
+  }
+  
+  h1 {
+    color: #ff0000;
+    font-size: 40px;
+  }
+  
+  p {
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-weight: 400;
+    text-indent: 2em;
+  }
+  .c{
+    height: 80px;
+    background-color: #f2f2f2;
+  }
+  b{
+    font-size: 20px;
+  }
+  .mao{
+    height: 100px;
+    background-color: #efcccc;
+  }
+.dian{
+  margin-left: 25%;
+}
+  .dian nav a{
+    text-decoration: none;
+	  color: #D21910;
+	  font-size: 20px;
+	  font-weight: 900;
+    padding: 50px;
+    line-height: 80px;
+  }
+  nav a:hover,
+  nav a.active{
+    line-height: 50px;
+    color: rgb(180, 46, 195);
+    border-bottom: 2px solid #d45170;
+}
+.f{
+  position: fixed;
+
+  top: 70%;
+  left: 82%;
+
+ }
+ .f1{
+   width: 100px;
+   height: 50px;
+   position: fixed;
+   background-color: #bababa;
+   top: 78%;
+   left: 93%;
+   border-radius: 20px 20px 20px 20px;
+   text-align: center;
+   line-height: 50px;
+ }
+ .f1 a {
+     text-decoration: none;
+   color: rgb(210, 55, 55);
+   font-size: 20px;
+   font-weight: 900;
+     
+ }
+
+ .f11{
+  width: 100px;
+  height: 50px;
+  position: fixed;
+  background-color: #bababa;
+  top: 78%;
+  left: 85%;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  line-height: 50px;
+}
+.f11 a {
+    text-decoration: none;
+    color: rgb(210, 55, 55);
+    font-size: 20px;
+    font-weight: 900;  
+}
