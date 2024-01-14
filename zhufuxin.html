@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信封</title>
+    <style>
+        body,div,h1,h2,form,fieldset,input,textarea,footer,p{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: none;
+
+        }
+
+        body{
+            background: white;
+            color: black;
+            font-family: tahoma;
+            background-color: rgb(231, 80, 60);
+        }
+
+        p{
+            font-size: 24px;
+
+        }
+
+        #wrap{
+            width: 530px;
+            margin: 20px auto 0;
+            height: 1000px;
+        }
+
+        h1{
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 35px;
+            font-family: tahoma;
+            color: white;
+        }
+
+        #form-wrap{
+            overflow: hidden;
+            height:  447px;
+            position: relative;
+            top: 0px;
+            transition: all ls ease-in-out .3s;
+        }
+
+        #form-wrap::before{
+            content: "";
+            position: absolute;
+            bottom: 128px;
+            left: 0px;
+            background: url('img/before.png');
+            width: 530px;
+            height: 317px;
+
+        }
+        #form-wrap::after{
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            background: url(img/after.png);
+            width: 530px;
+            height: 259px;
+        }
+
+        #form-wrap.hide::after,
+        #form-wrap.hider::before{
+            display: none;
+        }
+
+        #form-wrap:hover{
+            height: 777px;
+            top: -200px;
+        }
+
+        form{
+            background:white;
+            position: relative;
+            top: 200px;
+            overflow: hidden;
+            height: 200px;
+            width: 400px;
+            margin: 0px auto;
+            padding: 20px;
+            border: 1px solid white;
+            border-right: 3px;
+            transition: all 1s ease-in-out .2s;
+
+        }
+
+        #form-wrap:hover form{
+            height: 530px;
+        }
+        label{
+            margin: 11px 20px 0 0;
+            font-size: 15px;
+            color: gray;
+            text-transform: uppercase;
+        }
+
+        input[type=text], textarea{
+            font: 10px normal uppercase,arial,serif;
+            color: dimgray;
+            background: none;
+            width: 380px;
+            height: 37px;
+            padding: 0px 10px;
+            margin: 0 0 10px 0;
+            border: 1px solid #f8f5f1;
+            border-radius: 5px;
+                             
+
+        }
+        textarea{
+            height: 80px;
+            padding-top: 14px;
+        }
+
+        textarea:focus,
+        input[type=text]:focus{
+            background: white;
+        }
+
+        #form-wrap input[type=submit]{
+            position:relative;
+            font-family: tahoma;
+            font-size: 24px;
+            color: gray;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            background: none;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: opacity 0.7s ease-in-out 0s;
+        }
+
+        #form-wrap:hover input[type=submit]{
+            z-index: 1;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out 1.3s;
+        }
+        .f{
+	     position: fixed;
+
+	     top: 70%;
+	     left: 80%;
+
+      }
+      .f1{
+        width: 100px;
+        height: 50px;
+        position: fixed;
+        background-color: #bababa;
+        top: 78%;
+        left: 90%;
+        border-radius: 20px 20px 20px 20px;
+        text-align: center;
+        line-height: 50px;
+      }
+      .f1 a {
+          text-decoration: none;
+	      color: rgb(210, 55, 55);
+	      font-size: 20px;
+	      font-weight: 900;
+          
+      }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+         <h1>2024新年快乐！</h1>
+         <br><br><br>
+         <div id="form-wrap">
+              <form action="">
+                  <p>您好</p>
+                  <label for="email">祝贺：</label>
+                  <textarea name="message" id="message"  value="祝贺！"  >
+                    逢此佳节，送上我一份真诚的祝福，愿你在新的一年里，拥有更安康与快乐的时光，祝你新年快乐。
+                    送一束温馨美好的祝福给你，新年快乐，快乐新年。
+                    常常思念你，在我的心里;默默祝福你，在我的心底。愿你佳节愉快，幸福甜蜜。
+                    祝大家，新年好!佳节至，情意深，永微笑，蜜甜心。愿佳节的欢声笑语，永远萦绕于你的心中，飘荡在你的家庭。
+                    千里之遥，我站在僻静的窗台旁，透过新年的氛围，遥望过去的日子。发现时间凝固了，而你是这风景上灿烂的亮点，我用心在这幅画上题写祝福。
+                    这时刻犹如一把钥匙，开启所有日子里的思念。祝福的云朵，正细细说起，我们曾有的棋盘——祝你新岁如意。泛黄的记忆不易唤醒，但，你的名字却是心弦上最昂扬的高音，在纷坠的雪花里，在轻启的唇上，呈献给你祝福与喜悦，愿你的新年快乐平安!为了久藏你的影子，在深冬，我给心灵再上一把锁。而如今，在这个春光流溢的节日，我从锁眼里仿佛又听到自己的声音，祝新年快乐。
+                    这世界除了生命永恒外，还有我们年复一年的不凋的微笑。祝新年如意。
+                    岁月可以褪去记忆，却褪不去我们一路留下的欢声笑语，我们的祝福是无尽的爱意，祝你新春快乐，岁岁安怡!轻轻推开冬季的窗，静看雪花飘起，于是想起，给你捎个讯息，你还好吗?真是惦记。祈愿你新年快乐甜蜜。
+                    岁月的意象渐渐绿了，嫩叶和新叶的歌，沿着年轮急速地旋转，新年快乐!
+                    最明快的，莫过于一年一度芳草绿，莫过于倾听年轮的呼吸，每逢这种时刻，便簇拥着我们共同的梦境，你我总在梦中嫣然笑语——新年愉快!
+                    此刻，初春中的一种舞蹈，使我想起雪花，我是在绿色的邮筒前，数完了冬天，新年，深深怀念你。
+                    街上弥漫着节日的热情和喧嚣，窗台上的水仙已悄愤吐蕾，楼下的邮差刚刚离去，空气中传导着浓郁的气息。新的一年，我对你投注新的关注和祝福!
+                    丟掉心中的迷茫，抹去眼里的忧伤，新的一年新的路，走呵，鲜花正盛开在你的前方。
+                    这个时节，走出门吧，让目光闪亮地锲入季节的深处，探寻花开的消息。
+                    站在天桥上，看周围熙熙攘攘为节日奔走的人们。心中的一份喜悦，就这么在恬淡的情绪中，溶入了对所有爱我的人的深深祝福……
+                    总想问一问远方的你是否无恙，总想听一听那轻捷的脚步声是否依旧。希望你永远快乐!在新年里，你不要改变太多，直至以后的岁月。
+                    你的热情，温暖了我冰冻的心;你的大胆，鼓起了我爱的热忱;你的关怀，激起我感激之情。新年伊始，愿我们透过那爱湖的波光水雾，一起憧憬美好的未来。
+                    生命是一场永无追悔的爱恋，年年岁岁。一束温馨的窗灯，一阵热烈的爆竹，一声由远而近隆隆的春雷，唤醒了岁月的风尘，新年到了!
+                    转眼之间，竟已至寒冷的冬末。在这样一个凛冽的日子里，对你的思念更深亦更浓，但愿你平安如往昔。
+                    请你打开窗，让新春的风吹进你的屋子，让新春的雪飞进你的屋子;让我新春的祝愿，飘进你的心坎。
+                    一年又一年，风风雨雨;一日又一日，日落日起。朋友的厚爱渗入心底。在这新春之际，敬上一杯酒，祝君健康欢欣!多一份欢欣就多一份美好，多一份快乐就多一份如意。愿节日的欢乐，新年的快乐，永远伴随着你。
+                    两行足迹，吟着长长的诗句;爱的力量，撑着浓浓的冬夜，引我们走进洁白的梦里。祝你新年快乐!
+                    走过漫漫岁月，细数片片回忆。请记得我，就像我时时想起你一般。崭新的一年，愿你平安快乐，美梦成真。
+                    冬给我留下一个梦，尽管神秘，却也香甜。当我睁开眼睛，面前是一个彩色的春天。心爱的友人啊，请与我分享这裔新的一年。
+                    希望最美好的祝福与喜悦，充满你即将来临的一年，在新的一年里，万事如意，吉祥乐。
+                    笑是力量的亲兄弟。爽朗的笑声，不但产生力量，本身就是力量和自信的表现。在这春光来临的美好时刻，让我们一起放声欢笑吧!</textarea>
+
+                  <p>致敬</p>
+                  <label for="name">名字：</label>
+                  
+                  <textarea  type="text" name="name" value="" id="name">充满祝福的您</textarea>
+
+                  <!-- <label for="email">qq联系方式加我我会送上最美好的祝福：</label> -->
+                  <!-- <input type="text" name="email" value="" id="email"> -->
+
+                  <input type="submit" name="submit" value="2024新年快乐！">
+
+              </form>
+         </div>
+    </div>
+    <div class="f">
+           <audio src="原来是萝卜丫 - 桃花笑 (超甜女生版).mp3" controls></audio>
+       
+    </div>
+    <div class="f1"> <a href="index.html">返回主页</a></div>
+</body>
+</html>
